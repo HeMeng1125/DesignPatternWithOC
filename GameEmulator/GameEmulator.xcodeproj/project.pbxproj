@@ -1,0 +1,477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1082087F1BA459DD00F05A88 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1082087E1BA459DD00F05A88 /* main.m */; };
+		108208821BA459DD00F05A88 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 108208811BA459DD00F05A88 /* AppDelegate.m */; };
+		108208851BA459DD00F05A88 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 108208841BA459DD00F05A88 /* ViewController.m */; };
+		108208881BA459DD00F05A88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 108208861BA459DD00F05A88 /* Main.storyboard */; };
+		1082088A1BA459DD00F05A88 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 108208891BA459DD00F05A88 /* Images.xcassets */; };
+		1082088D1BA459DD00F05A88 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1082088B1BA459DD00F05A88 /* LaunchScreen.xib */; };
+		108208991BA459DE00F05A88 /* GameEmulatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 108208981BA459DE00F05A88 /* GameEmulatorTests.m */; };
+		108208A41BA45B1500F05A88 /* AbstractSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 108208A31BA45B1500F05A88 /* AbstractSystem.m */; };
+		108208A71BA45B4C00F05A88 /* AbstractImplementor.m in Sources */ = {isa = PBXBuildFile; fileRef = 108208A61BA45B4C00F05A88 /* AbstractImplementor.m */; };
+		108208AB1BA45CB700F05A88 /* GBASystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 108208AA1BA45CB700F05A88 /* GBASystem.m */; };
+		108208B11BA45D5200F05A88 /* GBAImplementor.m in Sources */ = {isa = PBXBuildFile; fileRef = 108208B01BA45D5200F05A88 /* GBAImplementor.m */; };
+		108208B41BA45E4D00F05A88 /* PSPSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 108208B31BA45E4D00F05A88 /* PSPSystem.m */; };
+		108208B71BA45E6800F05A88 /* PSPImplementor.m in Sources */ = {isa = PBXBuildFile; fileRef = 108208B61BA45E6800F05A88 /* PSPImplementor.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		108208931BA459DE00F05A88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 108208711BA459DD00F05A88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 108208781BA459DD00F05A88;
+			remoteInfo = GameEmulator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		108208791BA459DD00F05A88 /* GameEmulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameEmulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1082087D1BA459DD00F05A88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1082087E1BA459DD00F05A88 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		108208801BA459DD00F05A88 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		108208811BA459DD00F05A88 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		108208831BA459DD00F05A88 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		108208841BA459DD00F05A88 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		108208871BA459DD00F05A88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		108208891BA459DD00F05A88 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1082088C1BA459DD00F05A88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		108208921BA459DE00F05A88 /* GameEmulatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameEmulatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		108208971BA459DE00F05A88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		108208981BA459DE00F05A88 /* GameEmulatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameEmulatorTests.m; sourceTree = "<group>"; };
+		108208A21BA45B1500F05A88 /* AbstractSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractSystem.h; sourceTree = "<group>"; };
+		108208A31BA45B1500F05A88 /* AbstractSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractSystem.m; sourceTree = "<group>"; };
+		108208A51BA45B4C00F05A88 /* AbstractImplementor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractImplementor.h; sourceTree = "<group>"; };
+		108208A61BA45B4C00F05A88 /* AbstractImplementor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractImplementor.m; sourceTree = "<group>"; };
+		108208A91BA45CB700F05A88 /* GBASystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBASystem.h; sourceTree = "<group>"; };
+		108208AA1BA45CB700F05A88 /* GBASystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBASystem.m; sourceTree = "<group>"; };
+		108208AF1BA45D5200F05A88 /* GBAImplementor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBAImplementor.h; sourceTree = "<group>"; };
+		108208B01BA45D5200F05A88 /* GBAImplementor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBAImplementor.m; sourceTree = "<group>"; };
+		108208B21BA45E4D00F05A88 /* PSPSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPSystem.h; sourceTree = "<group>"; };
+		108208B31BA45E4D00F05A88 /* PSPSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPSystem.m; sourceTree = "<group>"; };
+		108208B51BA45E6800F05A88 /* PSPImplementor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPImplementor.h; sourceTree = "<group>"; };
+		108208B61BA45E6800F05A88 /* PSPImplementor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPImplementor.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		108208761BA459DD00F05A88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1082088F1BA459DE00F05A88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		108208701BA459DD00F05A88 = {
+			isa = PBXGroup;
+			children = (
+				1082087B1BA459DD00F05A88 /* GameEmulator */,
+				108208951BA459DE00F05A88 /* GameEmulatorTests */,
+				1082087A1BA459DD00F05A88 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1082087A1BA459DD00F05A88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				108208791BA459DD00F05A88 /* GameEmulator.app */,
+				108208921BA459DE00F05A88 /* GameEmulatorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1082087B1BA459DD00F05A88 /* GameEmulator */ = {
+			isa = PBXGroup;
+			children = (
+				108208801BA459DD00F05A88 /* AppDelegate.h */,
+				108208811BA459DD00F05A88 /* AppDelegate.m */,
+				108208831BA459DD00F05A88 /* ViewController.h */,
+				108208841BA459DD00F05A88 /* ViewController.m */,
+				108208A91BA45CB700F05A88 /* GBASystem.h */,
+				108208AA1BA45CB700F05A88 /* GBASystem.m */,
+				108208AF1BA45D5200F05A88 /* GBAImplementor.h */,
+				108208B01BA45D5200F05A88 /* GBAImplementor.m */,
+				108208B21BA45E4D00F05A88 /* PSPSystem.h */,
+				108208B31BA45E4D00F05A88 /* PSPSystem.m */,
+				108208B51BA45E6800F05A88 /* PSPImplementor.h */,
+				108208B61BA45E6800F05A88 /* PSPImplementor.m */,
+				108208A81BA45C8F00F05A88 /* Abstract */,
+				108208861BA459DD00F05A88 /* Main.storyboard */,
+				108208891BA459DD00F05A88 /* Images.xcassets */,
+				1082088B1BA459DD00F05A88 /* LaunchScreen.xib */,
+				1082087C1BA459DD00F05A88 /* Supporting Files */,
+			);
+			path = GameEmulator;
+			sourceTree = "<group>";
+		};
+		1082087C1BA459DD00F05A88 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1082087D1BA459DD00F05A88 /* Info.plist */,
+				1082087E1BA459DD00F05A88 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		108208951BA459DE00F05A88 /* GameEmulatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				108208981BA459DE00F05A88 /* GameEmulatorTests.m */,
+				108208961BA459DE00F05A88 /* Supporting Files */,
+			);
+			path = GameEmulatorTests;
+			sourceTree = "<group>";
+		};
+		108208961BA459DE00F05A88 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				108208971BA459DE00F05A88 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		108208A81BA45C8F00F05A88 /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				108208A21BA45B1500F05A88 /* AbstractSystem.h */,
+				108208A31BA45B1500F05A88 /* AbstractSystem.m */,
+				108208A51BA45B4C00F05A88 /* AbstractImplementor.h */,
+				108208A61BA45B4C00F05A88 /* AbstractImplementor.m */,
+			);
+			name = Abstract;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		108208781BA459DD00F05A88 /* GameEmulator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1082089C1BA459DE00F05A88 /* Build configuration list for PBXNativeTarget "GameEmulator" */;
+			buildPhases = (
+				108208751BA459DD00F05A88 /* Sources */,
+				108208761BA459DD00F05A88 /* Frameworks */,
+				108208771BA459DD00F05A88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GameEmulator;
+			productName = GameEmulator;
+			productReference = 108208791BA459DD00F05A88 /* GameEmulator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		108208911BA459DE00F05A88 /* GameEmulatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1082089F1BA459DE00F05A88 /* Build configuration list for PBXNativeTarget "GameEmulatorTests" */;
+			buildPhases = (
+				1082088E1BA459DE00F05A88 /* Sources */,
+				1082088F1BA459DE00F05A88 /* Frameworks */,
+				108208901BA459DE00F05A88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				108208941BA459DE00F05A88 /* PBXTargetDependency */,
+			);
+			name = GameEmulatorTests;
+			productName = GameEmulatorTests;
+			productReference = 108208921BA459DE00F05A88 /* GameEmulatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		108208711BA459DD00F05A88 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = YouXianMing;
+				TargetAttributes = {
+					108208781BA459DD00F05A88 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					108208911BA459DE00F05A88 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 108208781BA459DD00F05A88;
+					};
+				};
+			};
+			buildConfigurationList = 108208741BA459DD00F05A88 /* Build configuration list for PBXProject "GameEmulator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 108208701BA459DD00F05A88;
+			productRefGroup = 1082087A1BA459DD00F05A88 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				108208781BA459DD00F05A88 /* GameEmulator */,
+				108208911BA459DE00F05A88 /* GameEmulatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		108208771BA459DD00F05A88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				108208881BA459DD00F05A88 /* Main.storyboard in Resources */,
+				1082088D1BA459DD00F05A88 /* LaunchScreen.xib in Resources */,
+				1082088A1BA459DD00F05A88 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		108208901BA459DE00F05A88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		108208751BA459DD00F05A88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				108208A41BA45B1500F05A88 /* AbstractSystem.m in Sources */,
+				108208B11BA45D5200F05A88 /* GBAImplementor.m in Sources */,
+				108208A71BA45B4C00F05A88 /* AbstractImplementor.m in Sources */,
+				108208851BA459DD00F05A88 /* ViewController.m in Sources */,
+				108208AB1BA45CB700F05A88 /* GBASystem.m in Sources */,
+				108208B71BA45E6800F05A88 /* PSPImplementor.m in Sources */,
+				108208821BA459DD00F05A88 /* AppDelegate.m in Sources */,
+				108208B41BA45E4D00F05A88 /* PSPSystem.m in Sources */,
+				1082087F1BA459DD00F05A88 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1082088E1BA459DE00F05A88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				108208991BA459DE00F05A88 /* GameEmulatorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		108208941BA459DE00F05A88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 108208781BA459DD00F05A88 /* GameEmulator */;
+			targetProxy = 108208931BA459DE00F05A88 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		108208861BA459DD00F05A88 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				108208871BA459DD00F05A88 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1082088B1BA459DD00F05A88 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1082088C1BA459DD00F05A88 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1082089A1BA459DE00F05A88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1082089B1BA459DE00F05A88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1082089D1BA459DE00F05A88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GameEmulator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1082089E1BA459DE00F05A88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GameEmulator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		108208A01BA459DE00F05A88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GameEmulatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GameEmulator.app/GameEmulator";
+			};
+			name = Debug;
+		};
+		108208A11BA459DE00F05A88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GameEmulatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GameEmulator.app/GameEmulator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		108208741BA459DD00F05A88 /* Build configuration list for PBXProject "GameEmulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1082089A1BA459DE00F05A88 /* Debug */,
+				1082089B1BA459DE00F05A88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1082089C1BA459DE00F05A88 /* Build configuration list for PBXNativeTarget "GameEmulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1082089D1BA459DE00F05A88 /* Debug */,
+				1082089E1BA459DE00F05A88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1082089F1BA459DE00F05A88 /* Build configuration list for PBXNativeTarget "GameEmulatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				108208A01BA459DE00F05A88 /* Debug */,
+				108208A11BA459DE00F05A88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 108208711BA459DD00F05A88 /* Project object */;
+}
